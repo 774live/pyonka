@@ -1916,14 +1916,6 @@ window.__require = function e(t, n, o) {
                 // var elem = document.getElementById("adsResult");
                 // elem.style.display = 'block';
 
-                var adRestart = document.getElementById("adsResult");
-                adRestart.addEventListener('mousedown', adButtonClickRestart);
-                function adButtonClickRestart(){
-
-                    setTimeout(() => {
-                        location.reload();
-                      }, 2000);
-                }
 
                 
                 var e = this,
@@ -1936,24 +1928,11 @@ window.__require = function e(t, n, o) {
                 ThisGameScoreResult.innerHTML = scores_text.join('');
                 
                 
-                var TweetButton = document.getElementById("TweetButton");
-                TweetButton.addEventListener('mousedown', TweetButtonAction);
-                function TweetButtonAction(){
-                    var twiTxt = `https://twitter.com/share?hashtags=Watermelongame,suikagame,スイカゲーム&url=https://bit.ly/3tJ2eeH&text=現在プレイ中のスイカのゲームの記録は${e.sceneScore.string}点です。`
-                    window.open(twiTxt);
-                }
 
                 fadeIn(GameEndScoreScreen, 500);
                 
 
-                var GameMyScoreResult = document.getElementById("GameMyScoreResult");
-                const ip = GameMyScoreResult.dataset.ip.split(',')[0]
-
-                const hostUrl = location.hostname === "localhost" || location.hostname === "127.0.0.1" ? 'http://localhost:8000' : "https://pyon.netlify.app/"
-                const data = { ip: ip, score: e.sceneScore.string, suikaTime:null }
-                axios.post(hostUrl + '/scores.json', data)
-                .then(response => {
-                });
+ 
 
                 function fadeIn(el, time) {
                     el.style.opacity = 0;
