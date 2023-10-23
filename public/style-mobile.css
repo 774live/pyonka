@@ -974,3 +974,11 @@ p.footer {
 #loadingText {
 	color:#506155;
 }
+
+#dunno {
+	background-color:#e1fbf1;
+}
+
+#restartButton {
+	background-color: #f99f0a;
+}
