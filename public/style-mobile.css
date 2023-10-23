@@ -25,65 +25,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
     /* <-- Apparently some margin are still there even though it's hidden */
 }
-#aswift_2_host {
-    height: auto !important;
-}
-#aswift_1_host {
-    /* height: auto !important; */
-}
-#aswift_0_host {
-    height: auto !important;
-}
-.adsbygoogle {
-    position: relative;
-    top: -20px;
-    /* height: auto !important; */
-    /* z-index: 999; */
-}
 
-#adsResultfooter {
-    width:100vw !important;
-    height: auto !important;
-    position: absolute;
-    bottom:0px !important;
-}
-#adsResultfooter div  {
-    /* width:100vw !important;
-    height: auto !important; */
-}
-#adsResultfooter div div {
-    /* width:100vw !important; */
-    /* height: auto !important; */
-}
-#adsResultfooter a {
-    /* width:100vw !important;
-    height: auto !important; */
-}
-#adsResultfooter div img{
-    /* width:100vw !important; */
-    /* height: auto !important; */
-}
-
-#adsResult {
-    /* width:100vw !important; */
-    /* height: auto !important; */
-}
-#adsResult div  {
-    /* width:100vw !important;
-    height: auto !important; */
-}
-#adsResult div div {
-    /* width:100vw !important; */
-    /* height: auto !important; */
-}
-#adsResult a {
-    /* width:100vw !important; */
-    /* height: auto !important; */
-}
-#adsResult div img{
-    /* width:100vw !important; */
-    /* height: auto !important; */
-}
 
 .thisScore {
     font-size: 15vw;
@@ -773,7 +715,7 @@ p.footer {
         background-color: rgb(4, 106, 222);
     }
     body {
-        background-color: #b1f1b6 !important;
+        background-color: #cdf9d1 !important;
         position: absolute;
         /* overflow: visible; */
         /* top:50px !important; */
@@ -786,7 +728,7 @@ p.footer {
         margin: 0 auto;
     }
     main {
-        background-color: #29A5BB;
+       background-color: #29A5BB;
         width: calc(440px + 360px + 360px) !important;
         position: absolute;
         height: 100%;
@@ -840,7 +782,6 @@ p.footer {
     .side-left {
         width: 360px;
         height: 100vh;
-        background-color: #b1f1b6;
         position: absolute;
         left: 430px;
         top:-1px;
@@ -849,7 +790,6 @@ p.footer {
     .side-right {
         width: 360px;
         height: 100vh;
-        background-color: #b1f1b6;
         position: absolute;
         left: -360px;
         top:-1px;
@@ -895,7 +835,6 @@ p.footer {
         font-size: 18px;
         margin-top: 15px;
         line-height: 1.8em;
-        background-color: #e1fbf1;
         margin-left: 15px;
         margin-right: 15px;
         padding:10px;
@@ -935,36 +874,6 @@ p.footer {
         margin-right:10px;
     }
 
-
-    #adsResultfooter {
-        width:100% !important;
-        /* height: auto !important; */
-        position: absolute;
-        bottom: -211px !important;
-        /* bottom: -84px !important; */
-        z-index: 999 !important;
-    }
-    #adsResultfooter div  {
-        width:100% !important;
-        height: auto !important;
-    }
-    #adsResultfooter div div {
-        width:100% !important;
-        height: auto !important;
-    }
-    #adsResultfooter a {
-        width:100% !important;
-        height: auto !important;
-    }
-    #adsResultfooter div img {
-        width:100% !important;
-        height: auto !important;
-    }
-
-.adsbygoogle {
-    position: relative;
-    top: 0px;
-}
 }
 
 #splash {
