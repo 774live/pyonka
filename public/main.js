@@ -66,8 +66,6 @@ window.boot = function() {
     function setLoadingDisplay() {
         // Loading splash scene
         var splash = document.getElementById('splash');
-        // var progressBar = splash.querySelector('.progress-bar span');
-
 
 
         cc.loader.onProgress = function(completedCount, totalCount, item) {
@@ -90,30 +88,10 @@ window.boot = function() {
                 }
             }
             loadingNum++;
-            // if(loadingBool){
-            // 	var loadintT = document.getElementById("loadingText")
-            // }
-            // var percent = 100 * completedCount / totalCount;
-            // if(loadingBool && loadingNum >= 1){
-            // 	   console.log("dskpi",loadingNum);
-            // 	   loadintT.innerHTML = 'loading......' + parseInt(percent)  + '%';
-            // 	   if(percent.toFixed(0) >= 100){
-
-            // 		   loadingBool = false;
-            // 		   loadintT.remove();
-            // 	   }
-            // }
-            // loadingNum ++;
-
-            // var percent = 100 * completedCount / totalCount;
-            // if (progressBar) {
-            // progressBar.style.width = percent.toFixed(2) + '%';
-            // }
 
 
         };
         splash.style.display = 'block';
-        // progressBar.style.width = '0%';
 
         cc.director.once(cc.Director.EVENT_AFTER_SCENE_LAUNCH, function() {
             splash.style.display = 'none';
@@ -258,45 +236,7 @@ allCards.forEach(function (el) {
     var fruitsRefreshReword = document.getElementById("fruitsRefreshReword");
     var fruitsRefreshRewordCloseButton = document.getElementById("fruitsRefreshRewordCloseButton");
 
-    googletag.cmd.push(() => {
 
-        if (window.matchMedia && window.matchMedia('(max-width: 431px)').matches) {
-            rewardedSlot = googletag.defineOutOfPageSlot('/62532913,22995500819/s_suika-game_1x1_rewarded-video_31251', googletag.enums.OutOfPageFormat.REWARDED).addService(googletag.pubads());
-            console.log('sp')
-        } else {
-            rewardedSlot = googletag.defineOutOfPageSlot('/62532913,22995500819/p_suika-game_1x1_rewarded-video_31252', googletag.enums.OutOfPageFormat.REWARDED).addService(googletag.pubads());
-            console.log('pc')
-        }
-        googletag.enableServices();
-    
-        googletag.pubads().addEventListener('rewardedSlotReady', function(evt) {
-            fruitsRefreshRewordInfoButton.style.display = 'block';
-            fruitsRefreshReword.addEventListener('mousedown', fruitsRefreshRewordAction);
-
-            function fruitsRefreshRewordAction() {
-                evt.makeRewardedVisible();
-                console.log(1)
-            }
-        });
-
-        googletag.pubads().addEventListener('rewardedSlotGranted', function(evt) {
-            console.log('報酬が提供されました。' + JSON.stringify(evt.payload));
-            MainManger.reward()
-            fruitsRefreshRewordInfo.style.display = 'none';
-            fruitsRefreshRewordInfoButton.style.display = 'none';
-        });
-    
-        googletag.pubads().addEventListener('rewardedSlotClosed', function(evt) {
-            console.log('ユーザーにより閉じられました。');
-            // fruitsRefreshRewordInfoButton.style.display = 'block';
-                // fruitsRefreshRewordInfo.style.display = 'block';
-                // fruitsRefreshRewordInfoButton.style.display = 'block';
-            googletag.destroySlots([rewardedSlot]);
-
-        });
-
-        googletag.display(rewardedSlot);
-    });
 
 
     fruitsRefreshRewordInfoButton.addEventListener('mousedown', fruitsRefreshRewordInfoButtonAction);
@@ -309,27 +249,14 @@ allCards.forEach(function (el) {
         fruitsRefreshRewordInfo.style.display = 'none';
         fruitsRefreshRewordInfoButton.style.display = 'block';
     }
-    
-    // var spinner = document.getElementById("spinner");
-
-
-var canvasDiv = document.getElementById("canvasDiv");
-        // cc.find("Canvas").getComponent("MainGameJS").sceneScore.node.y = -30
-        // setTimeout(function() {
-        //     cc.find("Canvas").getComponent("MainGameJS").gameEnd1()
-        // }, 2000);
-        //    MainManger.GAME_OVER_BOOL = 1
-    //    console.log(1111)
-    //     o.GAME_OVER_BOOL = !1, a.gameOverShowText(o.gameScore, 1), this.node.runAction(cc.sequence(cc.delayTime(.5), cc.callFunc(this.gameEnd1.bind(this))))
  
 
-
-
+var canvasDiv = document.getElementById("canvasDiv");
 
 
     };
 
-    // jsList
+
     var jsList = settings.jsList;
 
     if (false) {
