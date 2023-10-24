@@ -425,92 +425,86 @@ p.footer {
         font-size: 3.5vw !important;
         border-top-left-radius: 15px;
     }
-.list-ranking-item {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    position: relative;
-    height: 10vw;
-    margin-left: 35px;
-    margin-right: 35px;
-    list-style: none;
-    font-size: 6vw;
-    width: 100vw;
-    background-color: bisque;
-    border-radius: 20px;
-    letter-spacing: 3px;
-    padding: 0px !important;
-    line-height: 9vw;
-    border: 1px solid #B65901;
-}
+	.list-ranking-item {
+		margin: 0 auto;
+		margin-bottom: 10px;
+		position: relative;
+		height: 10vw;
+		margin-left: 35px;
+		margin-right: 35px;
+		list-style: none;
+		font-size: 6vw;
+		width: 100vw;
+		background-color: bisque;
+		border-radius: 20px;
+		letter-spacing: 3px;
+		padding: 0px !important;
+		line-height: 9vw;
+		border: 1px solid #B65901;
+	}
 
-.rank_icon {
-    width: 7vw;
-    height: 7vw;
-    background-color: #aaa;
-    border-radius: 50%;
-    color: #FFF;
-    display: block;
-    /* text-align: center; */
-    line-height: 6.5vw;
-    position: absolute;
-    left: -5vw;
-    /* padding-left: 4px; */
-    letter-spacing: 0px;
-    font-size: 4vw;
-    z-index: 999;
-    position: absolute;
-}
-.rank_icon-small {
-    width: 8vw;
-    height: 8vw;
-    background-color: #aaa;
-    border-radius: 50%;
-    color: #FFF;
-    display: block;
-    /* text-align: center; */
-    line-height: 6.7vw;
-    position: absolute;
-    left: -3vw;
-    top: -1vw;
-    /* padding-left: 4px; */
-    letter-spacing: 0px;
-    font-size: 4vw;
-    font-weight: bold;
-    background: none;
-    z-index: 999;
-    position: absolute;
-    text-shadow:
-    1px 1px orange,
-    -1px 1px orange,
-    1px -1px orange,
-    -1px -1px orange,
-    1px 1px 5px orange;
-    text-align: center;
-}
+	.rank_icon {
+		width: 7vw;
+		height: 7vw;
+		background-color: #aaa;
+		border-radius: 50%;
+		color: #FFF;
+		display: block;
+		/* text-align: center; */
+		line-height: 6.5vw;
+		position: absolute;
+		left: -5vw;
+		/* padding-left: 4px; */
+		letter-spacing: 0px;
+		font-size: 4vw;
+		z-index: 999;
+		position: absolute;
+	}
+	.rank_icon-small {
+		width: 8vw;
+		height: 8vw;
+		background-color: #aaa;
+		border-radius: 50%;
+		color: #FFF;
+		display: block;
+		/* text-align: center; */
+		line-height: 6.7vw;
+		position: absolute;
+		left: -3vw;
+		top: -1vw;
+		/* padding-left: 4px; */
+		letter-spacing: 0px;
+		font-size: 4vw;
+		font-weight: bold;
+		background: none;
+		z-index: 999;
+		position: absolute;
+		text-shadow:
+		1px 1px orange,
+		-1px 1px orange,
+		1px -1px orange,
+		-1px -1px orange,
+		1px 1px 5px orange;
+		text-align: center;
+	}
 
-.list-ranking-item img {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: -0px;
-}
-.list-ranking-item-small img {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: -0px;
-}
+	.list-ranking-item img {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		left: -0px;
+	}
+	.list-ranking-item-small img {
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		left: -0px;
+	}
 
-#GameEndScoreScreen {
-    padding-top: 15vw;
-}
+	#GameEndScoreScreen {
+		padding-top: 15vw;
+	}
  }
-
-@media (min-width: 375px) {
-    /* 横幅が800px以上の場合に適用するスタイル */
-    
- }
-
 
 @media screen and (min-width:431px){
     #canvasDiv, #Cocos2dGameContainer, canvas, .game-area {
@@ -572,11 +566,6 @@ p.footer {
         width: 50%;
         position: absolute;
         top : 125px;
-    }
-    .ranking-ads {
-        position: absolute !important;
-        top : 170px !important;
-        left: 15px !important;
     }
     #GameEndScoreScreen h2 {
         font-family: 'Noto Sans JP', sans-serif;
@@ -785,6 +774,7 @@ p.footer {
         position: absolute;
         left: 430px;
         top:-1px;
+		display:none;
     }
 
     .side-right {
@@ -793,6 +783,7 @@ p.footer {
         position: absolute;
         left: -360px;
         top:-1px;
+		display:none;
     }
     .side-right h1, .side-left h1 {
     
