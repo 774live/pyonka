@@ -231,7 +231,7 @@ body {
     margin: 0;
     cursor: default;
     color: #888;
-    background-color: #333;
+    background-color: #cdf9d1;
     text-align: center;
     font-family: Helvetica, Verdana, Arial, sans-serif;
     display: flex;
@@ -283,34 +283,6 @@ p.footer {
     height: 100%;
     /* background: #ffffff url(./singleColor.png) no-repeat center; */
     background-size: 100%;
-}
-
-.progress-bar {
-    background-color: #1a1a1a;
-    position: absolute;
-    left: 25%;
-    top: 80%;
-    height: 15px;
-    padding: 5px;
-    width: 50%;
-    /*margin: 0 -175px;         */
-    border-radius: 5px;
-    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
-}
-
-.progress-bar span {
-    display: block;
-    height: 100%;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
-    transition: width .4s ease-in-out;
-    background-color: #34c2e3;
-}
-
-.stripes span {
-    background-size: 30px 30px;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    animation: animate-stripes 1s linear infinite;
 }
 
 .tinder--card {
@@ -728,42 +700,7 @@ p.footer {
         z-index:999;
         border-radius: 50px;
     }
-    main .pc-info-area {
-        padding-top: 140px;
-    }
-    header {
-        background-color: #506155;
-        position: fixed;
-        min-height:50px;
-        width:100%;
-        top:0px;
-        left:0;
-        z-index:999;
-    }
-    .dropdown {
-        margin-right: 15px;
-        margin-top: 2px;
-    }
-    header li a {
-        color: #FFF !important;
-    }
-    header .dropdown-item a {
-        color: rgb(69, 69, 69) !important;
-    }
-    header li a.disabled {
-        color: #506155 !important;
-        font-weight: bold;
-    }
-    header li a.disabled::before{
-        content: "✓　";
-        color: #506155 !important;
-        font-weight: bold;
-    }
-    header img {
-        width:40px;
-        height:40px;
-        text-align: left;
-    }
+
     .side {
         position: relative;
         top:0px;
@@ -809,8 +746,7 @@ p.footer {
         font-size: 15px;
         text-shadow: 1px 1px #3b483f, -1px 1px #3b483f, 1px -1px #3b483f, -1px -1px #3b483f, 1px 1px 0px #3b483f;
     }
-    .rule_seicho {
-    }
+
     .rule_seicho img {
         width:250px;
         height: auto;
