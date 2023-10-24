@@ -774,7 +774,6 @@ p.footer {
         position: absolute;
         left: 430px;
         top:-1px;
-		display:none;
     }
 
     .side-right {
@@ -783,7 +782,6 @@ p.footer {
         position: absolute;
         left: -360px;
         top:-1px;
-		display:none;
     }
     .side-right h1, .side-left h1 {
     
@@ -865,6 +863,12 @@ p.footer {
         margin-right:10px;
     }
 
+}
+
+@media screen and (max-width:430px){
+	.side-left, .side-right {
+		display:none;
+	}
 }
 
 #splash {
