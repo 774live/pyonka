@@ -218,7 +218,9 @@ input::-webkit-inner-spin-button {
 }
 
 
-
+html, body {
+	background-color:#cdf9d1;
+}
 
 body {
     position: absolute;
@@ -231,7 +233,6 @@ body {
     margin: 0;
     cursor: default;
     color: #888;
-    background-color: #cdf9d1;
     text-align: center;
     font-family: Helvetica, Verdana, Arial, sans-serif;
     display: flex;
