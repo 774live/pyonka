@@ -118,6 +118,22 @@
         <div class="rule_seicho">
             <img src="public/res/seicho-ja.png">
         </div>
+		
+		<label for="kiki">Kiki sounds</label>
+		<input type="checkbox" id="kiki" name="kiki" checked>
+		<script>
+		  var checkbox = document.getElementById("kiki");
+		  var kikiAudio = window.kikiAudio;
+		  kikiAudio = true;
+		  checkbox.addEventListener("change", function() {
+			if (checkbox.checked) {
+			  kikiAudio = true;
+			}
+			else {
+			  kikiAudio = false;
+			}
+		  });
+		</script>
 		<!--
         <h2>ルール説明</h2>
 
@@ -249,18 +265,6 @@
 
 
 </section>
-
-
-<!--
-<script>
-
-    setTimeout(function () {
-        var canvasDiv = document.getElementById("canvasDiv");
-        canvasDiv.style.width = '0px';
-    }, 1000);
-</script>
--->
-
 
 
         

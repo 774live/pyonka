@@ -1099,7 +1099,6 @@ window.__require = function e(t, n, o) {
         });
 		
 		var pyons = [];
-		console.log('dicks');
 		for (var i = 1; i <= 9; i++) {
 		  pyons[i] = new Audio("public/pyon" + i + ".mp3");
 		}
@@ -1218,8 +1217,11 @@ window.__require = function e(t, n, o) {
                         null != o.getComponent(cc.PhysicsCircleCollider) && (o.getComponent(cc.PhysicsCircleCollider).radius = o.height / 2, o.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic, o.getComponent(cc.PhysicsCircleCollider).apply())
                     }).start(), n.Instance.fruitHeigth = n.Instance.findHighestFruit()
                 }, t.prototype.createFruitSui = function(e, t) {}, t.prototype.createFruitL = function(e, t, n) {
-                    //u.default.Instance.Play(3, !1, .5), u.default.Instance.Play(6, !1, .3);
-					playRandomPyon();
+					if( ! kikiAudio) {
+						u.default.Instance.Play(3, !1, .5), u.default.Instance.Play(6, !1, .3);
+					} else {
+						playRandomPyon();
+					}
 					
                     for (var o = 0; o < 10; o++) {
                         var c = r.default.Spawn("juicePre", this.downEffect);
