@@ -1913,10 +1913,6 @@ window.__require = function e(t, n, o) {
             gameEnd1: function() {
 
 
-                // var elem = document.getElementById("adsResult");
-                // elem.style.display = 'block';
-
-
                 
                 var e = this,
                     t = this.returnCurrentLanType();
@@ -1928,8 +1924,9 @@ window.__require = function e(t, n, o) {
                 ThisGameScoreResult.innerHTML = scores_text.join('');
                 
                 
-
                 fadeIn(GameEndScoreScreen, 500);
+				var audio = new Audio('../gameover.mp3');
+				audio.play();
                 
 
  
@@ -1951,35 +1948,12 @@ window.__require = function e(t, n, o) {
                     el.style.display = 'block';
                   }
                 
-                // var e = this,
-                //     t = this.returnCurrentLanType();
-                // 1 == t ? (this.gameOverT1.string = "\u6e38 \u620f \u7ed3 \u675f", this.gameOverT2.string = "\u70b9 \u51fb \u67e5 \u770b \u5206 \u6570") : 2 == t ? (this.gameOverT1.string = "\u904a \u6232 \u7d50 \u675f", this.gameOverT2.string = "\u9ede \u64ca \u67e5 \u770b \u5206 \u6578") : 4 == t ? (this.gameOverT1.string = "\uac8c\uc784 \uc885\ub8cc", this.gameOverT2.string = "\ud074\ub9ad \ud558\uc5ec \uc810\uc218 \ubcf4\uae30") : (this.gameOverT1.string = "Score: " + e.sceneScore.string + "\n\nゲームオーバー", this.gameOverT2.string = "▼タップしてリスタート"), this.gameOveEndBool = !0, this.gameOverT1.node.zIndex = 999, this.gameOverT2.node.zIndex = 999, this.gameOverToEnd.zIndex = 999, this.gameOverT1.node.opacity = 0, this.gameOverT1.node.y = 100, this.gameOverToEnd.y = 0, this.gameOverT1.node.runAction(cc.sequence(cc.delayTime(.2), cc.spawn(cc.fadeIn(1), cc.moveBy(1, 0, 200)), cc.delayTime(.3))), this.gameOverToEnd.runAction(cc.sequence(cc.fadeTo(1, 100), cc.callFunc(function() {
-                //     e.gameOverToEnd.getComponent(cc.Button).enabled = !0
-                
-                // }))), this.gameOverT2.node.opacity = 0, this.gameOverT2.node.y = this.gameOverT1.node.y - 50, this.gameOverT2.node.runAction(cc.sequence(cc.delayTime(.2), cc.spawn(cc.fadeIn(1), cc.moveBy(1, 0, 0)), cc.delayTime(.3))), this.gameOverT2.node.runAction(cc.sequence(cc.delayTime(0.5), cc.scaleTo(.3, 1.2).easing(cc.easeSineInOut()), cc.scaleTo(.3, 1).easing(cc.easeSineInOut()))).repeatForever()
             },
             initEndLayer: function() {
-                // this.gameOverT1.node.active = !1, this.gameOverT2.node.active = !1, this.gameOverToEnd.active = !1, o.publicGameBool || adBreak({
-                //     type: "next",
-                //     name: "restart-game"
-                // }), a.gotoEndLayer1()
 
                 location.reload();
-                // location.reload();
             },
-            // 游戏结束的全屏广告 
-            /*initEndLayer: function() {
-                this.gameOverT1.node.active = !1, this.gameOverT2.node.active = !1, this.gameOverToEnd.active = !1, this.showAdsLayer(), a.gotoEndLayer1()
-            },
-            showAdsLayer: function() {
-                cc.find("Canvas/adsLayer").active = !0, cc.find("Canvas/adsLayer").setContentSize(cc.winSize.width, cc.winSize.height)
-            },
-            AdsLink: function() {
-                window.location.href = "https://www.qwas.top"
-            },
-            closeAdsLayer: function() {
-                cc.find("Canvas/adsLayer").active = !1
-            },*/
+
             start: function() {},
             update: function(e) {
                 this.gameOverGoToOVer()
