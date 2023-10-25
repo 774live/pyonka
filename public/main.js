@@ -228,27 +228,6 @@ allCards.forEach(function (el) {
     event.target.style.transform = '';
   });
 });
-
-
-    var rewardedSlot;
-    var fruitsRefreshRewordInfoButton = document.getElementById("fruitsRefreshRewordInfoButton");
-    var fruitsRefreshRewordInfo = document.getElementById("fruitsRefreshRewordInfo");
-    var fruitsRefreshReword = document.getElementById("fruitsRefreshReword");
-    var fruitsRefreshRewordCloseButton = document.getElementById("fruitsRefreshRewordCloseButton");
-
-
-
-
-    fruitsRefreshRewordInfoButton.addEventListener('mousedown', fruitsRefreshRewordInfoButtonAction);
-    function fruitsRefreshRewordInfoButtonAction(){
-        fruitsRefreshRewordInfo.style.display = 'block';
-        fruitsRefreshRewordInfoButton.style.display = 'none';
-    }
-    fruitsRefreshRewordCloseButton.addEventListener('mousedown', fruitsRefreshRewordCloseButtonAction);
-    function fruitsRefreshRewordCloseButtonAction(){
-        fruitsRefreshRewordInfo.style.display = 'none';
-        fruitsRefreshRewordInfoButton.style.display = 'block';
-    }
  
 
 var canvasDiv = document.getElementById("canvasDiv");
