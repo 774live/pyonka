@@ -1925,7 +1925,7 @@ window.__require = function e(t, n, o) {
                 
                 
                 fadeIn(GameEndScoreScreen, 500);
-				var audio = new Audio('../gameover.mp3');
+				var audio = new Audio('public/gameover.mp3');
 				audio.play();
                 
 
