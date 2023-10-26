@@ -1613,38 +1613,9 @@ window.__require = function e(t, n, o) {
 
                         
                         const fruits_id = function(res) { switch (res) {
-                            case 10:
-                                return '50/5035266c-8df3-4236-8d82-a375e97a0d9c'
-                                break;
-                            case 9:
-                                return '56/564ba620-6a55-4cbe-a5a6-6fa3edd80151'
-                                break;
-                            case 8:
-                                return '84/84bc9d40-83d0-480c-b46a-3ef59e603e14'
-                                break;
-                            case 7:
-                                return '5f/5fa0264d-acbf-4a7b-8923-c106ec3b9215'
-                                break;
-                            case 6:
-                                return '66/665a0ec9-6c43-4858-974c-025514f2a0e7'
-                                break;
-                            case 5:
-                                return '03/03c33f55-5932-4ff7-896b-814ba3a8edb8'
-                                break;
-                            case 4:
-                                return '13/132ded82-3e39-4e2e-bc34-fc934870f84c'
-                                break;
-                            case 3:
-                                return '74/74237057-2880-4e1f-8a78-6d8ef00a1f5f'
-                                break;
-                            case 2:
-                                return 'd0/d0c676e4-0956-4a03-90af-fee028cfabe4'
-                                break;
-                            case 1:
-                                return '0c/0cbb3dbb-2a85-42a5-be21-9839611e5af7'
-                                break;
+
                             default:
-                                return 'ad/ad16ccdc-975e-4393-ae7b-8ac79c3795f2'
+                                return 'crouton'
                         }}
 
 
